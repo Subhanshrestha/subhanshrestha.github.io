@@ -144,6 +144,9 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
 .project-info li::before { content: '→'; position: absolute; left: 0; color: var(--accent); }
 .project-link { font-size: 0.875rem; color: var(--text); font-weight: 500; text-decoration: none; margin-top: auto; transition: color 0.3s; }
 .project-link:hover { color: var(--accent); }
+.project-link + .project-link {
+    margin-top: 0.5rem;
+}
 
 /* ========== SKILLS ========== */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
